@@ -1,12 +1,13 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar sticky="top" collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand as={Link} to="/">
                     <img
                         alt=""
                         src="https://i.ibb.co/9nTdDH5/logo.png"
@@ -17,13 +18,13 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto">
+                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
+                        <Nav.Link as={Link} to="/login">
+                            <button className='button'>Login</button>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

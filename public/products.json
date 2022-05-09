@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "RICE",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/TcQ781t/rice.png"
+    },
+    {
+        "id": 2,
+        "name": "PULSES",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/f0kmRx4/pulses.png"
+    },
+    {
+        "id": 3,
+        "name": "EGG",
+        "price": "150",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/4sWXGSN/egg.png"
+    },
+    {
+        "id": 4,
+        "name": "VEGETABLES",
+        "price": "180",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/f2b36tL/vegetable-package.jpg"
+    },
+    {
+        "id": 5,
+        "name": "NUTS",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/phrQDLh/nuts.png"
+    },
+    {
+        "id": 6,
+        "name": "VEGETABLE OIL",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/wMvRRHy/vegetable-oil.jpg"
+    }
+]

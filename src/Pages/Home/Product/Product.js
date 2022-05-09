@@ -5,15 +5,15 @@ const Product = ({ product }) => {
     const { id, name, price, description, img } = product;
     return (
         <div className=''>
-            <Card style={{ width: '%', border: '1px solid #00896F' }}>
+            <Card style={{ width: '100%', border: '1px solid #00896F' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
-                    <Card.Title>{name}</Card.Title>
+                    <Card.Title> <strong> <i>{name}</i> </strong> </Card.Title>
                     <Card.Text>
                         {description}
                     </Card.Text>
                     <Card.Text>
-                        Price: $ {price}
+                        <strong>Price:</strong> ${price}
                     </Card.Text>
                     <div className='d-flex justify-content-center'>
                         <button className='button'>Update</button>

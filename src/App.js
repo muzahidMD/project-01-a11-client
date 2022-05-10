@@ -6,6 +6,8 @@ import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import ManageInventory from './Pages/ManageInventory/ManageInventory';
+import MyItems from './Pages/MyItems/MyItems';
 import NotFound from './Pages/NotFound/NotFound';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import Footer from './Pages/shared/Footer/Footer';
@@ -29,6 +31,16 @@ function App() {
         <Route path='/addproduct' element={
           <RequireAuth>
             <AddProduct />
+          </RequireAuth>
+        }></Route>
+        <Route path='/manageinventory' element={
+          <RequireAuth>
+            <ManageInventory />
+          </RequireAuth>
+        }></Route>
+        <Route path='/myitems' element={
+          <RequireAuth>
+            <MyItems />
           </RequireAuth>
         }></Route>
         <Route path='*' element={<NotFound />}></Route>

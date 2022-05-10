@@ -5,8 +5,8 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
     return (
-        <div className='container login-form'>
-            <h2 className='my-5 login-title'>Add New Product</h2>
+        <div className='container form'>
+            <h2 className='my-5 page-title'>Add New Product</h2>
 
             <form className='w-50 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder='Enter Your Product Name' {...register("name")} required />

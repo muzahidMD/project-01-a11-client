@@ -4,7 +4,7 @@ import './Blog.css'
 const Blog = () => {
     return (
         <div className='container my-4 '>
-            <h2 className='text-center heading'><u>Question And Answer</u></h2>
+            <h2 className='page-title'>Question And Answer</h2>
             <div className='w-75 mx-auto'>
                 <div className='my-4'>
                     <h3>Question-1: Difference between javascript and nodejs .</h3>

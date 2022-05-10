@@ -33,8 +33,8 @@ const Register = () => {
     }
 
     return (
-        <div className='container register-form'>
-            <h2 className='my-5 register-title'>Please Register</h2>
+        <div className='container form'>
+            <h2 className='my-5 page-title'>Please Register</h2>
             <form onSubmit={handleRegister} className='w-50 mx-auto'>
                 <input type="text" name="name" id="" placeholder='Name' />
                 <input type="email" name="email" id="" placeholder='Email' required />

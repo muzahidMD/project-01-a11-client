@@ -41,8 +41,8 @@ const Login = () => {
     }
 
     return (
-        <div className='container login-form'>
-            <h2 className='my-5 login-title'>Please login</h2>
+        <div className='container form'>
+            <h2 className='page-title'>Please login</h2>
             <form onSubmit={handleSubmit} className='w-50 mx-auto'>
                 <input type="email" name="email" id="" placeholder='Email' required />
                 <input type="password" name="password" id="" placeholder='Password' required />

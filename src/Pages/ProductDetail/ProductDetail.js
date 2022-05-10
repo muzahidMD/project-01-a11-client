@@ -14,6 +14,7 @@ const ProductDetail = () => {
     }, [])
     return (
         <div>
+            <h2 className='page-title'> Product Details</h2>
             <Card className='mx-auto' style={{ width: '25%', border: '1px solid #00896F' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>

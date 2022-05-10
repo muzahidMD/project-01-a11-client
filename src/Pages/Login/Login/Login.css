@@ -1,9 +1,10 @@
-.login-title {
+.page-title {
     text-align: center;
     color: #00896F;
+    margin: 40px 0;
 }
 
-.login-form input {
+.form input:not([type=checkbox]) {
     display: block;
     width: 100%;
     margin-bottom: 20px;

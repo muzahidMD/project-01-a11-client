@@ -3,7 +3,7 @@ import { useAuthState, useSendEmailVerification } from 'react-firebase-hooks/aut
 import { Navigate, useLocation } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
-import Loading from '../../Shared/Loading/Loading';
+import Loading from '../../shared/Loading/Loading';
 
 const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
@@ -18,7 +18,6 @@ const RequireAuth = ({ children }) => {
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
 
-    console.log(user);
     if (user.providerData[0]?.providerId === 'password' && !user.emailVerified) {
         return <div className='text-center my-5'>
             <h3 className='text-danger'>Your Email is not verified!!</h3>

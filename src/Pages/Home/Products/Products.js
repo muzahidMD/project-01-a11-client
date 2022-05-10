@@ -10,7 +10,7 @@ const Products = () => {
             .then(data => setProducts(data))
     }, [])
     return (
-        <div className='container '>
+        <div id='products' className='container '>
             <h2 className='text-center my-5 '>Available Products</h2>
             <div className='products-container'>
                 {

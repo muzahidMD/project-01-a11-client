@@ -1,8 +1,14 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Product = ({ product }) => {
-    const { id, name, price, description, img } = product;
+    const { _id, name, price, description, img, supplierName, quantity } = product;
+    const navigate = useNavigate();
+
+    const navigateToProductDetail = (id) => {
+        navigate(`/product/${id}`)
+    }
     return (
         <div className=''>
             <Card style={{ width: '100%', border: '1px solid #00896F' }}>
@@ -14,9 +20,13 @@ const Product = ({ product }) => {
                     </Card.Text>
                     <Card.Text>
                         <strong>Price:</strong> ${price}
+                        <div className='d-flex align-items-center justify-content-between'>
+                            <p><small><strong>Supplier:</strong> {supplierName}</small></p>
+                            <p><small><strong> Quantity:</strong> {quantity} </small></p>
+                        </div>
                     </Card.Text>
                     <div className='d-flex justify-content-center'>
-                        <button className='button'>Update</button>
+                        <button className='button' onClick={() => navigateToProductDetail(_id)}>Update</button>
                     </div>
 
                 </Card.Body>

@@ -13,6 +13,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import Footer from './Pages/shared/Footer/Footer';
 import Header from './Pages/shared/Header/Header';
+import UpdateProduct from './Pages/UpdateProduct/UpdateProduct';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/register' element={<Register />}></Route>
         <Route path='/blog' element={<Blog />}></Route>
         <Route path='/aboutme' element={<AboutMe />}></Route>
+        <Route path='/update/:productId' element={<UpdateProduct />}></Route>
         <Route path='/product/:productId' element={
           <RequireAuth>
             <ProductDetail />

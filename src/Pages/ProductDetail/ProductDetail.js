@@ -6,6 +6,7 @@ const ProductDetail = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState([]);
     const { _id, name, price, description, img, supplierName, quantity } = product;
+
     useEffect(() => {
         const url = `https://fast-sierra-37608.herokuapp.com/product/${productId}`;
         fetch(url)

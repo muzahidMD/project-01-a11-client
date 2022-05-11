@@ -27,16 +27,17 @@ const Header = () => {
                     <Nav className="mx-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link href="home#products">Products</Nav.Link>
-                        <Nav.Link as={Link} to="/blog">Blogs</Nav.Link>
                         {
                             user &&
                             <>
-                                <Nav.Link as={Link} to="/addproduct">Add Product</Nav.Link>
                                 <Nav.Link as={Link} to="/manageinventory">Manage Inventory</Nav.Link>
+                                <Nav.Link as={Link} to="/addproduct">Add Product</Nav.Link>
                                 <Nav.Link as={Link} to="/myitems">My Items</Nav.Link>
                             </>
-
                         }
+
+                        <Nav.Link as={Link} to="/blog">Blogs</Nav.Link>
+                        <Nav.Link as={Link} to="/aboutme">About Me</Nav.Link>
                     </Nav>
                     <Nav>
                         {

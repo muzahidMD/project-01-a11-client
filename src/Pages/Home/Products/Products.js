@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Products.css'
 import Product from '../Product/Product';
+import useProducts from '../../../hooks/useProducts';
 
 const Products = () => {
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-        fetch('https://fast-sierra-37608.herokuapp.com/product')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, [])
+    const [products, setProducts] = useProducts();
+
     return (
         <div id='products' className='container '>
             <h2 className='text-center my-5 '>Available Products</h2>

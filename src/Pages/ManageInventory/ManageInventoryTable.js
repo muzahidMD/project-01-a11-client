@@ -14,7 +14,7 @@ const ManageInventoryTable = ({ product }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are You Sure?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`
+            const url = `https://fast-sierra-37608.herokuapp.com/product/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

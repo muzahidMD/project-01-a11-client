@@ -16,7 +16,7 @@ const AddProduct = () => {
 
         const product = { name, price, supplierName, quantity, description, img };
 
-        const url = `http://localhost:5000/product/`;
+        const url = `https://fast-sierra-37608.herokuapp.com/product/`;
         fetch(url, {
             method: 'POST',
             headers: {

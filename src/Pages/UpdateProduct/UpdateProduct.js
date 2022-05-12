@@ -18,7 +18,7 @@ const UpdateProduct = () => {
         const updatedProduct = { name, price, supplierName, quantity, description, img };
 
 
-        const url = `http://localhost:5000/product/${productId}`
+        const url = `https://fast-sierra-37608.herokuapp.com/product/${productId}`
         fetch(url, {
             method: 'PUT',
             headers: {

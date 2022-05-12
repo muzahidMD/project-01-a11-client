@@ -10,7 +10,7 @@ const UpdateProduct = () => {
         event.preventDefault();
         const name = event.target.name.value;
         const price = event.target.price.value;
-        const supplierName = event.target.name.value;
+        const supplierName = event.target.supplierName.value;
         const quantity = event.target.quantity.value;
         const description = event.target.description.value;
         const img = event.target.img.value;

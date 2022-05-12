@@ -2,19 +2,23 @@ import React from 'react';
 import './AddProduct.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const AddProduct = () => {
+    const [user] = useAuthState(auth);
 
     const handleAddProduct = event => {
         event.preventDefault();
         const name = event.target.name.value;
         const price = event.target.price.value;
-        const supplierName = event.target.name.value;
+        const supplierName = event.target.supplierName.value;
         const quantity = event.target.quantity.value;
         const description = event.target.description.value;
         const img = event.target.img.value;
+        const email = user.email;
 
-        const product = { name, price, supplierName, quantity, description, img };
+        const product = { email, name, price, supplierName, quantity, description, img };
 
         const url = `https://fast-sierra-37608.herokuapp.com/product/`;
         fetch(url, {

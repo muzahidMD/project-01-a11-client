@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../shared/Loading/Loading';
 import './Login.css';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     let errorElement;
@@ -17,28 +18,29 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const navigate = useNavigate();
-    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
     if (user) {
         navigate(from, { replace: true });
-    }
-    if (loading || sending) {
+    };
+
+    if (loading) {
         return <Loading></Loading>
-    }
+    };
 
     if (error) {
         errorElement = <p className='text-danger text-center mt-3'>Error: {error?.message} </p>;
-    }
+    };
 
     const handleSubmit = event => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password);
-    }
+        toast("Log in user")
+    };
 
     return (
         <div className='container form'>
@@ -51,7 +53,7 @@ const Login = () => {
             {errorElement}
             <div className='text-center'>
                 <p>Don't have an account ? <span><Link to="/register" style={{ color: "#00896F" }} className='text-decoration-none pe-auto'>Please Register</Link></span></p>
-
+                <SocialLogin />
                 <ToastContainer />
             </div>
         </div>

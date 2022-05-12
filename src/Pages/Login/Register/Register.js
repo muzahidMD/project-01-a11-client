@@ -4,6 +4,7 @@ import './register.css'
 import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import Loading from '../../shared/Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -45,6 +46,7 @@ const Register = () => {
             </form>
             <div className='text-center'>
                 <p>Already have an account ? <span style={{ color: "#00896F" }}><Link to="/login" style={{ color: "#00896F" }} className='text-decoration-none pe-auto'>Please Login</Link></span></p>
+                <SocialLogin />
             </div>
         </div>
     );

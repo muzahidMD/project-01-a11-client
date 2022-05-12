@@ -12,7 +12,12 @@ const ProductDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
-    }, [])
+    }, []);
+
+    const handleDeliverBtn = () => {
+
+    }
+
     return (
         <div>
             <h2 className='page-title'> Product Details</h2>
@@ -30,11 +35,19 @@ const ProductDetail = () => {
                             <p><small><strong> Quantity:</strong> {quantity} </small></p>
                         </div>
                     </Card.Text>
-                    <div className='d-flex justify-content-center'>
-                        <button className='button w-100'>Update</button>
-                        {/* <button className='button' onClick={() => navigateToProductDetail(_id)}>Update</button> */}
+                    <div >
+                        <form>
+                            <button
+                                onClick={handleDeliverBtn}
+                                className='text-light my-3 w-100 d-block mx-auto py-2 rounded-3 border-0'
+                                style={{ backgroundColor: '#00896F' }}
+                            >
+                                <span className='px-3'>Deliver</span>
+                            </button>
+                            <input type="text" name="" placeholder='Enter Stock' id="" />
+                            <input className='w-100 d-block mx-auto' style={{ backgroundColor: "#00896F", color: "#ffffff" }} type="submit" value="Restock" />
+                        </form>
                     </div>
-
                 </Card.Body>
             </Card>
         </div>

@@ -6,7 +6,9 @@ const useProducts = () => {
     useEffect(() => {
         fetch('https://fast-sierra-37608.herokuapp.com/product/')
             .then(res => res.json())
-            .then(data => setProducts(data))
+            .then(data => {
+                setProducts(data)
+            })
     }, []);
     return [products, setProducts];
 }

@@ -22,7 +22,6 @@ const ManageInventory = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     const remaining = products.filter(product => product._id !== id);
                     setProducts(remaining);
                 })
@@ -51,7 +50,6 @@ const ManageInventory = () => {
                             <td>{product.supplierName}</td>
                             <td><button onClick={() => navigateToUpdate(product._id)} className={'btn btn-success'}><FontAwesomeIcon icon={faPen} /></button></td>
                             <td><button onClick={() => handleDelete(product._id)} className={'btn btn-success'}><FontAwesomeIcon icon={faTrash} /></button></td>
-
                         </tr>)
                     }
                 </tbody>

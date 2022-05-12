@@ -8,7 +8,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import ManageInventory from './Pages/ManageInventory/ManageInventory';
-import MyItems from './Pages/MyItems/MyItems';
+import MyItems from './Pages/MyItems/MyItems.js';
 import NotFound from './Pages/NotFound/NotFound';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import Footer from './Pages/shared/Footer/Footer';

@@ -1,0 +1,11 @@
+.search form input {
+    border-radius: 60px;
+}
+
+.search-form {
+    display: flex;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding-top: 20px;
+}

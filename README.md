@@ -1,6 +1,6 @@
-# Book warehouse
+# EG-GROCERY warehouse
 
-Live website link [Book warehouse](https://eg-grocery.web.app/).
+Live website link [EG-GROCERY warehouse](https://eg-grocery.web.app/).
 
 ## Used technology
 

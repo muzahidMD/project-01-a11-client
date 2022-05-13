@@ -1,6 +1,7 @@
 import { } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Search.css'
 
 const Search = () => {
@@ -17,14 +18,22 @@ const Search = () => {
             </div>
             <div>
                 <h2 className='title'>What do you looking for ?</h2>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
+                <div className='search-container'>
+                    <div className='search-item'>
+                        <Link to={'#'}>Drinks</Link>
+                    </div>
+                    <div className='search-item'>
+                        <Link to={'#'}>Fresh Fruits</Link>
+                    </div>
+                    <div className='search-item'>
+                        <Link to={'#'}>Fresh Vegetable</Link>
+                    </div>
+                    <div className='search-item'>
+                        <Link to={'#'}>Nuts</Link>
+                    </div>
+                    <div className='search-item'>
+                        <Link to={'#'}>Fresh Oil</Link>
+                    </div>
                 </div>
             </div>
         </div>

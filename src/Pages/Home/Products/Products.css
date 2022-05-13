@@ -1,11 +1,10 @@
 .products-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4%;
-    margin-bottom: 100px;
+    grid-gap: 50px;
 }
 
-/************* make services responsive **************/
+/************* make products responsive **************/
 @media only screen and (max-width: 576px) {
     .products-container {
         grid-template-columns: repeat(1, 1fr);

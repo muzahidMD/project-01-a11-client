@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import './Product.css'
 
 const Product = ({ product }) => {
     const { _id, name, price, description, img, supplierName, quantity } = product;
@@ -11,7 +12,7 @@ const Product = ({ product }) => {
     }
     return (
         <div className=''>
-            <Card style={{ width: '100%', border: '1px solid #00896F' }}>
+            <Card className='card' style={{ width: '100%', border: '1px solid #00896F' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title> <strong> <i>{name}</i> </strong> </Card.Title>

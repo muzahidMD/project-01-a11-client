@@ -1,0 +1,14 @@
+.footer {
+    background-color: lightgray;
+}
+
+.footer-title {
+    color: #00896F;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.footer-icon {
+    color: #00896F;
+    font-size: 35px;
+}

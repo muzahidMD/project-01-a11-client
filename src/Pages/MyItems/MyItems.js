@@ -18,7 +18,7 @@ const MyItems = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/my-items?email=${email}`;
+        const url = `https://fast-sierra-37608.herokuapp.com/my-items?email=${email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data))
@@ -27,7 +27,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Do you want to delete");
         if (proceed) {
-            const url = `http://localhost:5000/my-items/${id}`
+            const url = `https://fast-sierra-37608.herokuapp.com/product/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

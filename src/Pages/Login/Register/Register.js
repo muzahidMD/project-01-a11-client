@@ -34,18 +34,18 @@ const Register = () => {
     }
 
     return (
-        <div className='container form'>
-            <h2 className='my-5 page-title'>Please Register</h2>
-            <form onSubmit={handleRegister} className='w-50 mx-auto'>
+        <div className='w-full max-w-md p-4 mx-auto rounded-md shadow-2xl sm:p-8 my-10 border border-gray-300'>
+            <h2 className='text-center my-5 text-3xl font-semibold '>Please Register</h2>
+            <form onSubmit={handleRegister} className=''>
                 <input type="text" name="name" id="" placeholder='Name' />
                 <input type="email" name="email" id="" placeholder='Email' required />
                 <input type="password" name="password" id="" placeholder='Password' required />
                 <input onChange={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
                 <label className={`ms-3 ${agree ? 'text-success' : 'text-danger'}`} htmlFor="terms">Accept EG GROCERY Terms and Condition</label>
-                <input disabled={!agree} className='w-50 d-block mx-auto mt-3' style={{ backgroundColor: "#00896F", color: "#ffffff" }} type="submit" value="Register" />
+                <input disabled={!agree} className='w-50 d-block mx-auto mt-3  text-black bg-lime-400' type="submit" value="Register" />
             </form>
             <div className='text-center'>
-                <p>Already have an account ? <span style={{ color: "#00896F" }}><Link to="/login" style={{ color: "#00896F" }} className='text-decoration-none pe-auto'>Please Login</Link></span></p>
+                <p>Already have an account ? <span><Link to="/login" className='text-decoration-none pe-auto text-lime-500'>Please Login</Link></span></p>
                 <SocialLogin />
             </div>
         </div>

@@ -36,7 +36,7 @@ const AddProduct = () => {
     };
     return (
         <div className='container form'>
-            <h2 className='my-5 page-title'>Add New Product</h2>
+            <h2 className='text-center my-5 text-3xl font-semibold '>Add New Product</h2>
 
             <form className='w-50 mx-auto' onSubmit={handleAddProduct}  >
                 <label className='mb-2' htmlFor="">Product Name</label>
@@ -57,7 +57,7 @@ const AddProduct = () => {
                 <label className='mb-2' htmlFor=""> Photo URL</label>
                 <input placeholder='Image URL' name='img' type={'text'} required />
 
-                <input className='w-50 d-block mx-auto' style={{ backgroundColor: "#00896F", color: "#ffffff" }} type="submit" value="Add Product" />
+                <input className='w-50 d-block mx-auto btn text-black bg-lime-400' type="submit" value="Add Product" />
                 <ToastContainer />
             </form>
         </div>

@@ -43,16 +43,16 @@ const Login = () => {
     };
 
     return (
-        <div className='container form'>
-            <h2 className='page-title'>Please login</h2>
-            <form onSubmit={handleSubmit} className='w-50 mx-auto'>
+        <div className='w-full max-w-md p-4 mx-auto rounded-md shadow-2xl sm:p-8 my-10 border border-gray-300'>
+            <h2 className='text-center my-5 text-3xl font-semibold'>Please login</h2>
+            <form onSubmit={handleSubmit} className=''>
                 <input type="email" name="email" id="" placeholder='Email' required />
                 <input type="password" name="password" id="" placeholder='Password' required />
-                <input className='w-50 d-block mx-auto' style={{ backgroundColor: "#00896F", color: "#ffffff" }} type="submit" value="Login" />
+                <input className='w-50 d-block mx-auto  text-black bg-lime-400' type="submit" value="Login" />
             </form>
             {errorElement}
             <div className='text-center'>
-                <p>Don't have an account ? <span><Link to="/register" style={{ color: "#00896F" }} className='text-decoration-none pe-auto'>Please Register</Link></span></p>
+                <p>Don't have an account ? <span><Link to="/register" className='text-decoration-none pe-auto text-lime-500'>Please Register</Link></span></p>
                 <SocialLogin />
                 <ToastContainer />
             </div>

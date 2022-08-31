@@ -31,10 +31,9 @@ const SocialLogin = () => {
             <div >
                 <button
                     onClick={() => signInWithGoogle()}
-                    className='text-light my-3 w-25 d-block mx-auto py-2 rounded-3 border-0'
-                    style={{ backgroundColor: '#00896F' }}
+                    className='text-light my-3 w-50 d-block mx-auto  text-black bg-lime-400 py-2 rounded-3 border-0'
                 >
-                    <img src={'https://i.ibb.co/QcNHWqH/Google-logo.png'} alt="" />
+                    <i class="fa-brands fa-google"></i>
                     <span className='px-3'>Google Sign In</span>
                 </button>
             </div>

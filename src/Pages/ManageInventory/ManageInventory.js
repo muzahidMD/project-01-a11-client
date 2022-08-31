@@ -29,7 +29,7 @@ const ManageInventory = () => {
     }
     return (
         <div>
-            <h2 className='page-title'>Manage Items</h2>
+            <h2 className='text-center my-5 text-3xl font-semibold'>Manage Items</h2>
             <Table responsive="sm">
                 <thead>
                     <tr>
@@ -48,8 +48,8 @@ const ManageInventory = () => {
                             <td>{product.name}</td>
                             <td>{product.quantity}</td>
                             <td>{product.supplierName}</td>
-                            <td><button onClick={() => navigateToUpdate(product._id)} className={'btn btn-success'}><FontAwesomeIcon icon={faPen} /></button></td>
-                            <td><button onClick={() => handleDelete(product._id)} className={'btn btn-success'}><FontAwesomeIcon icon={faTrash} /></button></td>
+                            <td><button onClick={() => navigateToUpdate(product._id)} className={"btn text-black bg-lime-400"} ><FontAwesomeIcon icon={faPen} /></button></td>
+                            <td><button onClick={() => handleDelete(product._id)} className={"btn text-black bg-lime-400"}><FontAwesomeIcon icon={faTrash} /></button></td>
                         </tr>)
                     }
                 </tbody>

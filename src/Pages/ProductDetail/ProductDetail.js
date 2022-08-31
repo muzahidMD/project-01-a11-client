@@ -20,7 +20,7 @@ const ProductDetail = () => {
 
     return (
         <div>
-            <h2 className='page-title'> Product Details</h2>
+            <h2 className='text-center my-5 text-3xl font-semibold'> Product Details</h2>
             <Card className='mx-auto' style={{ width: '25%', border: '1px solid #00896F' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
@@ -39,13 +39,12 @@ const ProductDetail = () => {
                         <form>
                             <button
                                 onClick={handleDeliverBtn}
-                                className='text-light my-3 w-100 d-block mx-auto py-2 rounded-3 border-0'
-                                style={{ backgroundColor: '#00896F' }}
+                                className='text-light my-3 w-100 d-block mx-auto py-2 rounded-3 border-0 text-black bg-lime-400'
                             >
                                 <span className='px-3'>Deliver</span>
                             </button>
                             <input type="text" name="" placeholder='Enter Stock' id="" />
-                            <input className='w-100 d-block mx-auto' style={{ backgroundColor: "#00896F", color: "#ffffff" }} type="submit" value="Restock" />
+                            <input className='w-100 d-block mx-auto text-black bg-lime-400' type="submit" value="Restock" />
                         </form>
                     </div>
                 </Card.Body>

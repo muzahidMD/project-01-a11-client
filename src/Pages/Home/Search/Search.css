@@ -2,13 +2,20 @@
     border-radius: 60px;
 }
 
-.search-form {
+/* .aboutSection {
+    background-color: #EAE5D9;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
-    margin: 0;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-    padding-top: 20px;
 }
+
+.aboutContent {
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
 
 .search-container {
     display: grid;

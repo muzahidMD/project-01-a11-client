@@ -42,10 +42,10 @@ const Header = () => {
                     <Nav>
                         {
                             user ?
-                                <button className='button' onClick={handleSignOut}>Sign Out</button>
+                                <button className='button font-semibold' onClick={handleSignOut}>Sign Out</button>
                                 :
                                 <Nav.Link as={Link} to="/login">
-                                    <button className='button'>Login</button>
+                                    <button className='button font-semibold'>Login</button>
                                 </Nav.Link>
                         }
                     </Nav>

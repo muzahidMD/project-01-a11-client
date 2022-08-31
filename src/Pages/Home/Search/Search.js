@@ -13,8 +13,8 @@ const Search = () => {
                         <h2 className='text-center mb-8 text-3xl font-semibold text-lime-500'>About Us</h2>
                         <p>Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.</p>
                         <div className='mt-10'>
-                            <button className="btn-primary px-4  py-2 rounded-none mr-5">Shop Now</button>
-                            <button className="btn-secondary px-4  py-2 rounded-none">Read more</button>
+                            <button className="btn-primary px-4 font-semibold py-2 rounded-none mr-5">Shop Now</button>
+                            <button className="btn-secondary px-4 font-semibold py-2 rounded-none">Read more</button>
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ const Product = ({ product }) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    <Card.Text className='mt-3'>
+                    <Card.Text className='my-4'>
                         <strong>Price:</strong> ${price}
                         <div className='d-flex align-items-center justify-content-between'>
                             <p><small><strong>Supplier:</strong> {supplierName}</small></p>
@@ -27,7 +27,7 @@ const Product = ({ product }) => {
                         </div>
                     </Card.Text>
                     <div className='d-flex justify-content-center'>
-                        <button className='button' onClick={() => navigateToProductDetail(_id)}>Update</button>
+                        <button className='btn-primary px-4 py-2 font-semibold' onClick={() => navigateToProductDetail(_id)}>Update</button>
                     </div>
 
                 </Card.Body>

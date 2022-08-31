@@ -19,7 +19,7 @@ const Product = ({ product }) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    <Card.Text>
+                    <Card.Text className='mt-3'>
                         <strong>Price:</strong> ${price}
                         <div className='d-flex align-items-center justify-content-between'>
                             <p><small><strong>Supplier:</strong> {supplierName}</small></p>

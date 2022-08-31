@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const ProductDetail = () => {
     const { productId } = useParams();
@@ -12,23 +12,29 @@ const ProductDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
-    }, []);
+    }, [productId]);
 
-    const handleDeliverBtn = () => {
+    const handleDeliverBtn = event => {
+        event.preventDefault();
 
-    }
+    };
+
+    const handleRestock = event => {
+        event.preventDefault();
+
+    };
 
     return (
         <div>
             <h2 className='text-center my-5 text-3xl font-semibold'> Product Details</h2>
-            <Card className='mx-auto' style={{ width: '25%', border: '1px solid #00896F' }}>
+            <Card className='mx-auto w-full lg:w-[25%]' style={{ border: '1px solid #00896F' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title> <strong> <i>{name}</i> </strong> </Card.Title>
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    <Card.Text>
+                    <Card.Text className='pt-3'>
                         <strong>Price:</strong> ${price}
                         <div className='d-flex align-items-center justify-content-between'>
                             <p><small><strong>Supplier:</strong> {supplierName}</small></p>
@@ -44,7 +50,7 @@ const ProductDetail = () => {
                                 <span className='px-3'>Deliver</span>
                             </button>
                             <input type="text" name="" placeholder='Enter Stock' id="" />
-                            <input className='w-100 d-block mx-auto text-black bg-lime-400' type="submit" value="Restock" />
+                            <input onClick={handleRestock} className='w-100 d-block mx-auto text-black bg-lime-400' type="submit" value="Restock" />
                         </form>
                     </div>
                 </Card.Body>

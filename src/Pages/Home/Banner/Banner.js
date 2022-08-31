@@ -11,8 +11,8 @@ const Banner = () => {
                     <h1 className="text-5xl font-bold mb-3">Store Online For</h1>
                     <h1 className="text-5xl font-bold text-lime-500">Fresh Groceries</h1>
                     <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn-primary px-5 py-2 rounded-none mr-5">Shop Now</button>
-                    <button className="btn-secondary px-5 py-2 rounded-none">Read more</button>
+                    <button className="btn-primary px-4 py-2 rounded-none mr-5">Shop Now</button>
+                    <button className="btn-secondary px-4  py-2 rounded-none">Read more</button>
                 </div>
             </div>
         </div>
